@@ -3,7 +3,7 @@ module.exports = {
   description: `매주 1개씩 각 도메인에서 데이터를 분석하는 방법들을 공유합니다.`,
   author: `Team {Earning Birds}`,
   introduction: `데이터 분석은 도메인을 잘 아는 것으로부터 시작한다는 믿음을 전파하기 위해 글을 쓰기 시작했습니다. 글쓴이에 대한 정보는 태그🏷를 통해 확인해보세요.`,
-  siteUrl: `https://gatsby-starter-bee.netlify.com`, // Your blog site url
+  siteUrl: `https://earningbirds.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
     github: `https://github.com/earningbirds`, // Your GitHub account
@@ -15,7 +15,7 @@ module.exports = {
   keywords: [`blog`],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
-    utterances: 'JaeYeopHan/gatsby-starter-bee', // Your repository for archive comment
+    utterances: 'earningbirds/blog', // Your repository for archive comment
   },
   configs: {
     countOfInitialPost: 10, // Config your initial count of post
@@ -26,5 +26,5 @@ module.exports = {
   share: {
     facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
   },
-  ga: '', // Add your google analytics tranking ID
+  ga: 'UA-160324107-1', // Add your google analytics tranking ID
 }
