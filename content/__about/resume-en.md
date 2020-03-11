@@ -13,12 +13,8 @@ We will write a new post every week! Please waiting for us.
 
 ### Dohyung Park
 
-Data Analyst at [Noom Korea](www.noom.com/kr). I spark joy in handling data and finding out insight.
+Data Analyst at Noom Korea. I spark joy in handling data and finding out insight.
 
 ### Jonghwan Jang
 
-PhD student at [Ajou University](www.ajou.ac.kr).
-
-$$
-x^2
-$$
+PhD student at Ajou University.

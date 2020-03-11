@@ -19,5 +19,3 @@ class AdvancedList(list):
     def __sub__(self, other):
         return AdvancedList(set(self) - set(other))
 ```
-
-$Y = AX + b$
