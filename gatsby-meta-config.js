@@ -1,8 +1,8 @@
 module.exports = {
   title: `Earning Birds' Tech`,
-  description: `매주 1개씩 각 도메인에서 데이터를 분석하는 방법들을 공유합니다.`,
+  description: `매주 1개씩 데이터 관련된 이야기들을 공유합니다.`,
   author: `Team {Earning Birds}`,
-  introduction: `데이터 분석은 도메인을 잘 아는 것으로부터 시작한다는 믿음을 전파하기 위해 글을 쓰기 시작했습니다. 글쓴이에 대한 정보는 태그🏷를 통해 확인해보세요.`,
+  introduction: `다양하게 데이터를 다루는 방법을 공부하고 나누고자 글을 쓰기 시작했습니다. 글쓴이들에 대한 정보는 태그🏷를 통해 확인해보세요.`,
   siteUrl: `https://earningbirds.netlify.com`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
@@ -24,7 +24,7 @@ module.exports = {
     buyMeACoffeeId: '',
   },
   share: {
-    facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
+    facebookAppId: '551169252186143', // Add facebookAppId for using facebook share feature v3.2
   },
   ga: 'UA-160324107-1', // Add your google analytics tranking ID
 }
