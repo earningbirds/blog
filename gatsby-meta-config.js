@@ -12,7 +12,16 @@ module.exports = {
     linkedin: ``, // Your LinkedIn account
   },
   icon: `content/assets/omigami.png`, // Add your favicon
-  keywords: [`blog`],
+  keywords: [
+    `blog`,
+    `python`,
+    `파이썬`,
+    `데이터분석`,
+    `시각화`,
+    `데이터`,
+    `개발`,
+    `development`,
+  ],
   comment: {
     disqusShortName: '', // Your disqus-short-name. check disqus.com.
     utterances: 'earningbirds/blog', // Your repository for archive comment
