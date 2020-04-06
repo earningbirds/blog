@@ -2,6 +2,7 @@
 title: 파이썬통계[5-2]확률분포 (Probability Distributions)
 date: 2020-04-03 20:04:46
 category: python
+author: 장종환
 draft: false
 ---
 
