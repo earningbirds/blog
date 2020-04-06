@@ -8,7 +8,7 @@ export const Bio = () => (
   <StaticQuery
     query={bioQuery}
     render={data => {
-      const { author, social, introduction } = data.site.siteMetadata
+      const { team, social, introduction } = data.site.siteMetadata
 
       return (
         <div className="bio">
@@ -17,15 +17,15 @@ export const Bio = () => (
               <Image
                 className="author-image"
                 fixed={data.avatar.childImageSharp.fixed}
-                alt={author}
+                alt={team}
                 style={{
                   borderRadius: `100%`,
                 }}
               />
               <div className="author-name">
-                <span className="author-name-prefix">Written by</span>
+                <span className="author-name-prefix">Team</span>
                 <Link to={'/about'} className="author-name-content">
-                  <span>@{author}</span>
+                  <span>@{team}</span>
                 </Link>
                 <div className="author-introduction">{introduction}</div>
                 <p className="author-socials">
@@ -71,7 +71,7 @@ const bioQuery = graphql`
     }
     site {
       siteMetadata {
-        author
+        team
         introduction
         social {
           twitter

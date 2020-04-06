@@ -2,6 +2,7 @@
 title: 매클로린 급수 with Python
 date: 2020-03-24 15:03:53
 category: python
+author: 박도형
 draft: false
 ---
 
