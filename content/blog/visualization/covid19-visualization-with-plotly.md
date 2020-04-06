@@ -2,6 +2,7 @@
 title: COVID19 Visualization with Plotly
 date: 2020-03-31 20:03:61
 category: visualization
+author: 박도형
 draft: false
 ---
 

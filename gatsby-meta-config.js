@@ -1,7 +1,7 @@
 module.exports = {
   title: `Earning Birds' Tech`,
   description: `매주 1개씩 데이터 관련된 이야기들을 공유합니다.`,
-  author: `Team {Earning Birds}`,
+  team: `Earning Birds`,
   introduction: `다양하게 데이터를 다루는 방법을 공부하고 나누고자 글을 쓰기 시작했습니다. 글쓴이들에 대한 정보는 태그🏷를 통해 확인해보세요.`,
   siteUrl: `https://earningbirds.netlify.com`, // Your blog site url
   social: {

@@ -118,6 +118,18 @@ const fetchTitle = async category => {
   return title
 }
 
+const fetchAuthor = async () => {
+  const { author } = await inquirer.prompt([
+    {
+      type: 'input',
+      name: 'author',
+      message: 'Enter your name',
+    },
+  ])
+
+  return author
+}
+
 module.exports = (async function() {
   const date = dateFns.format(new Date(), DATE_FORMAT)
 
@@ -134,7 +146,14 @@ module.exports = (async function() {
 
   const title = await fetchTitle(category)
   const fileName = getFileName(title)
-  const contents = refineContents({ title, date, category, draft: false })
+  const author = await fetchAuthor()
+  const contents = refineContents({
+    title,
+    date,
+    category,
+    author,
+    draft: false,
+  })
 
   fs.writeFile(`${destDir}/${fileName}.md`, contents, err => {
     if (err) {

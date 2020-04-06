@@ -2,6 +2,7 @@
 title: List 커스터마이징 하기
 date: 2020-03-12 00:03:24
 category: python
+author: 박도형
 draft: false
 ---
 
@@ -13,7 +14,7 @@ draft: false
 
 때문에, List의 Element들끼리 Uniqueness가 보장된다는 가정 하에 다음과 같은 방식으로 `-`연산을 만들어줄 수 있습니다.
 
-```{python}
+```py
 
 class AdvancedList(list):
     def __sub__(self, other):

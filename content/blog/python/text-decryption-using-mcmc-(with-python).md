@@ -2,6 +2,7 @@
 title: Text Decryption Using MCMC (with Python)
 date: 2020-03-26 15:03:29
 category: python
+author: 박도형
 draft: false
 ---
 

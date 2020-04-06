@@ -40,7 +40,7 @@ export function Head({ description, lang, meta, keywords, title }) {
               },
               {
                 name: `twitter:creator`,
-                content: data.site.siteMetadata.author,
+                content: data.site.siteMetadata.team,
               },
               {
                 name: `twitter:title`,
@@ -87,7 +87,7 @@ const detailsQuery = graphql`
       siteMetadata {
         title
         description
-        author
+        team
       }
     }
   }

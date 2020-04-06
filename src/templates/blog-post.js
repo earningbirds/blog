@@ -16,6 +16,7 @@ import * as ScrollManager from '../utils/scroll'
 
 import '../styles/code.scss'
 import 'katex/dist/katex.min.css'
+import { PostAuthor } from '../components/post-author'
 
 export default ({ data, pageContext, location }) => {
   useEffect(() => {
@@ -25,15 +26,16 @@ export default ({ data, pageContext, location }) => {
 
   const post = data.markdownRemark
   const metaData = data.site.siteMetadata
-  const { title, comment, siteUrl, author, sponsor } = metaData
+  const { title, comment, siteUrl, team, sponsor } = metaData
   const { disqusShortName, utterances } = comment
 
   return (
     <Layout location={location} title={title}>
       <Head title={post.frontmatter.title} description={post.excerpt} />
       <PostTitle title={post.frontmatter.title} />
+      <PostAuthor author={post.frontmatter.author} />
       <PostContainer html={post.html} />
-      <SocialShare title={post.frontmatter.title} author={author} />
+      <SocialShare title={post.frontmatter.title} author={team} />
       {!!sponsor.buyMeACoffeeId && (
         <SponsorButton sponsorId={sponsor.buyMeACoffeeId} />
       )}
@@ -58,7 +60,7 @@ export const pageQuery = graphql`
     site {
       siteMetadata {
         title
-        author
+        team
         siteUrl
         comment {
           disqusShortName
@@ -75,6 +77,7 @@ export const pageQuery = graphql`
       html
       frontmatter {
         title
+        author
         date(formatString: "MMMM DD, YYYY")
       }
     }
