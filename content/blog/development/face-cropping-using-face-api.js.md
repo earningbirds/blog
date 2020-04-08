@@ -25,7 +25,7 @@ draft: false
 yarn add face-api.js hull.js
 ```
 
-앞서 설명드렸듯 face-api.js는 얼굴 인식 inference용으로 필요하고, <a href="https://andriiheonia.github.io/hull/">hull.js</a>에서는 뒤에서 다시 설명드리겠지만 convex한 데이터를 정렬하기 위한 용도로 활용했습니다.
+앞서 설명드렸듯 face-api.js는 얼굴 detection 및 landmark inference용으로 필요하고, <a href="https://andriiheonia.github.io/hull/">hull.js</a>에서는 뒤에서 다시 설명드리겠지만 Landmark 데이터를 정렬하기 위한 용도로 활용했습니다.
 
 설치만 하면 끝일 것 같은데, 아쉽게도 추가적인 일 하나가 더 필요합니다. <a href="https://github.com/justadudewhohacks/face-api.js/tree/master/weights">pre-trained model(weight)</a>을 추가로 다운로드받는 일인데요. pre-traiend된 모델을 사용할 것이기 때문에 미리 학습된 데이터의 가중치들을 받아오는 일을 잊고 넘어갈 수는 없겠죠?
 
@@ -101,7 +101,7 @@ high level api인 만큼 이번 코드도 읽기 간편합니다. 필요한 argu
 각 함수를 통해 얻어낸 x, y좌표값들을 저는 array로 묶어주었습니다.
 
 그런데 여기서 한가지 문제가 있는데요. 데이터 포인트들이 canvas에서 cropping하기 좋은 구조로 정렬되어 있지 않다는 것인데요. 때문에 테스트하는 동안 제 얼굴이 여러번 뭉개져버렸습니다😭.
-그래서 특단의 조치로 대학시절 알고리즘 시간에 배웠던 convex-hull problem과 같은 방식으로 접근해보기로 합니다. 다행히 convex-hull을 위한 정렬 패키지가 있었고, 이는 위에서 언급한 `hull.js`였습니다. 이 패키지도 굉장히 간단한 방식으로 사용이 가능한데요.
+그래서 특단의 조치로 대학시절 알고리즘 시간에 배웠던 <a href="https://ko.wikipedia.org/wiki/%EB%B3%BC%EB%A1%9D_%EA%BB%8D%EC%A7%88_%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98">convex-hull problem</a>과 같은 방식으로 접근해보기로 합니다. 다행히 convex-hull을 위한 정렬 패키지가 있었고, 이는 위에서 언급한 `hull.js`였습니다. 이 패키지도 굉장히 간단한 방식으로 사용이 가능한데요.
 
 ```js
 const points = hull(pointset, 300, [".x", ".y"]);
